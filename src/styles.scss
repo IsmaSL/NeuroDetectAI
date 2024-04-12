@@ -1,1 +1,148 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow: auto;
+}
+
+body:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+    background-color: #0089d7;
+}
+
+body:hover::-webkit-scrollbar-thumb:hover {
+    background-color: #006bb3;
+}
+
+h1, h2, h3 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+// Posible segundo color 55ce63
+
+.text-head-blue-1{
+    color: #0178bc;
+}
+
+.text-p-1 {
+    color: #404040;
+}
+
+.gradient-primary {
+    background: linear-gradient(90deg, #0178bc 0%, #00bdda 100%);
+}
+
+.gradient-secondary {
+    background: linear-gradient(90deg, #00bdda 0%, #0178bc 100%);
+}
+
+.gradient-thirdty {
+    background: radial-gradient(#00bdda, #0178bc);
+}
+
+.shadow-1 {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.3), 
+                inset 0px -5px 10px rgba(0, 0, 0, 0.3),
+}
+
+.light-item {
+    // position: relative;
+}
+
+.light-item::before {
+    // content: "";
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // background-color: rgba(255, 255, 255, 0.5);
+    // opacity: 0;
+    // transition: opacity 0.3s ease-in-out;
+}
+
+.light-item:hover::before {
+    // opacity: 1;
+}
+
+/* Buttons */
+
+.btn-light {
+    background-color: #fff;
+    color: #0178bc;
+    border: #0178bc 3px solid;
+}
+
+.btn-light:hover {
+    background-color: #0178bc;
+    color: #fff;
+    border: #fff 3px solid;
+}
+
+.btn-blue {
+    background-color: #0178bc;
+    color: #fff;
+}
+
+.btn-blue:hover {
+    background-color: #fff;
+    color: #0178bc;
+    border: #0178bc 3px solid;
+}
+
+.btn-outline-light:hover {
+    color: #0178bc;
+}
+
+.link-format {
+    color: #0178bc;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+.link-format:hover {
+    text-decoration: none;
+}
+
+.link-format:visited {
+    text-decoration: none;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0089d7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #006bb3;
+}
+
+/* Disable Scrollbar Arrows */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+  @media (min-width: 768px) {
+    .img-icon-size {
+      width: 500%; /* O un tamaño específico si prefieres un tamaño fijo en pantallas más grandes */
+      height: auto;
+    }
+  }
