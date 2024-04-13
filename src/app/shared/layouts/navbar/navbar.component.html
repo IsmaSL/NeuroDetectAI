@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top gradient-primary border-bottom border-3 border-white px-3 fw-medium" data-bs-theme="dark" style="position: block;">
+<nav class="navbar navbar-expand-md sticky-top gradient-primary border-bottom border-3 border-white px-3 fw-medium" data-bs-theme="dark" style="position: block;">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="assets/images/logo/logo.png" alt="NeuroDetectAI" width="35" class="img-fluid me-2">
@@ -17,9 +17,14 @@
             <li class="nav-item light-item">
                 <a class="nav-link active" href="#aboutus">Nosotros</a>
             </li>
-            <li class="nav-item light-item">
-                <a class="nav-link active" href="#services">Soluciones</a>
-            </li>
+            <li class="nav-item light-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#services" data-bs-toggle="dropdown" aria-expanded="false">Soluciones</a>
+                <ul class="dropdown-menu bg-white shadow">
+                  <li><a class="dropdown-item text-p-1" href="#">DETEC-TDAH</a></li>
+                  <li><a class="dropdown-item text-p-1" href="#">GAME-TDAH</a></li>
+                  <li><a class="dropdown-item text-p-1" href="#">SOLUCIÓN N</a></li>
+                </ul>
+              </li>
             <li class="nav-item light-item">
                 <a class="nav-link active" href="#pricing">Planes</a>
             </li>

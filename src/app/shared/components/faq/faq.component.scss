@@ -1,0 +1,15 @@
+.accordion-button:not(.collapsed) {
+    color: #0056b3;
+    /* Cambia el color del texto para la pregunta activa */
+    background-color: #e7f1ff;
+    /* Cambia el color de fondo para la pregunta activa */
+}
+
+.accordion-button::after {
+    /* Cambia el icono de la flecha */
+    font-weight: 900;
+    font-style: bold;
+    font-size: 1.5em;
+    color: #0056b3;
+    /* Cambia el color del icono de la flecha */
+}

@@ -1,1 +1,38 @@
-<p>testimonials works!</p>
+<section class="container-fluid gradient-thirdty p-md-5 shadow-1" id="testimonials">
+    <div class="py-5 px-md-5 m-md-5">
+        <div class="row text-center">
+            <div class="col">
+                <div class="row text-center">
+                    <h2 class="display-5 fw-medium text-white">Customers love</h2>
+                    <p class="text-light fs-4 my-3">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col">
+                <div class="main-carousel" data-flickity='{ "cellAlign": "center", "wrapAround": true, "autoPlay": 2000, "pauseAutoPlayOnHover": false}'>
+                    <div class="carousel-cell" *ngFor="let item of items; let i = index" [class.active]="i === 0">
+                        <div class="card p-4 mx-2 mx-md-3 rounded-4 shadow" style="width: 23rem;">
+                            <div class="mb-2">
+                                <img src="{{ item.imgSrc }}" alt="avatar" class="rounded-5" width="20%" alt="avatar">
+                            </div>
+                            <div class="flex-grow-1 pt-md-3">
+                                <span class="fs-4 fw-medium">“{{ item.title }}”</span>
+                            </div>
+                            <div class="avatar-author d-block mt-2">
+                                <span class="fs-5 fw-semibold">{{ item.name }}</span>
+                                <br>
+                                <span class="fs-6">{{ item.job }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Configure on -->
+<!-- https://flickity.metafizzy.co/options -->

@@ -1,0 +1,57 @@
+.image-hover-wrapper {
+    position: relative;
+    overflow: hidden; /* Mantiene todo contenido dentro de los límites del contenedor */
+}
+
+.image-hover-wrapper img {
+    display: block; /* Asegura que la imagen se muestra correctamente sin espacios extra */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    transition: filter 0.6s ease; /* Transiciones suaves para el filtro de desaturación y la sombra */
+}
+
+.image-hover-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.image-hover-wrapper:hover::after {
+    opacity: 1;
+    inset: 25px;
+    border-radius: 10px;
+}
+
+.image-hover-wrapper .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    opacity: 0; /* El texto está oculto inicialmente */
+    transition: opacity 1s ease; /* Transición suave para la opacidad del texto */
+    color: #fff;
+    padding: 20px; /* Agrega algo de padding para evitar que el texto toque los bordes */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.image-hover-wrapper:hover img {
+    filter:
+        grayscale(1) brightness(0.4);
+}
+
+.image-hover-wrapper:hover .hover-text {
+    opacity: 1; /* Hace el texto visible */
+}
+
+.shadow-solution:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px; /* Sombra exterior */
+}
