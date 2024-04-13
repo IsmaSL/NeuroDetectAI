@@ -1,1 +1,62 @@
-<p>contact-us works!</p>
+<section class="container-fluid p-md-5" id="contactus">
+    <div class="px-2 py-4 px-md-5 py-md-0 m-md-5">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="row text-center text-md-start">
+                            <h2 class="display-5 fw-medium text-head-blue-1">Contáctanos</h2>
+                            <p class="text-p-1 fs-5 my-3">
+                                Nos encantaría saber de ti. Si tienes preguntas, necesitas más información sobre nuestros servicios o 
+                                deseas enviarnos tus comentarios, por favor llena el formulario a continuación y nos pondremos en contacto 
+                                contigo lo antes posible.
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <img src="assets/images/contactus.png" class="img-fluid w-50 mb-4 mb-md-0" alt="contactus">
+                        </div>
+                    </div>  
+                    <div class="col-12 col-md-6 mb-5 mb-md-0 d-flex align-items-center">
+                        <div class="border border-light-subtle shadow rounded-4 p-4 p-md-5 w-100">
+                            <form id="contactForm" autocomplete="off">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label fs-5">Nombre</label>
+                                    <input type="text" class="form-control" id="name" required placeholder="Ingresa tu nombre">
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce un nombre.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fs-5">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" required
+                                        placeholder="nombre@ejemplo.com">
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce un correo electrónico válido.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label fs-5">Mensaje</label>
+                                    <textarea class="form-control" id="message" required rows="4"
+                                        placeholder="Escribe tu mensaje aquí"></textarea>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce un mensaje.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-blue border-2 shadow rounded-5 px-4 py-2 my-2 fs-5 fw-semibold">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function (event) {
+                            if (!this.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            this.classList.add('was-validated');
+                        }, false);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
