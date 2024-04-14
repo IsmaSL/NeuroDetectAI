@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../shared/layouts/header/header.component';
 import { AboutUsComponent } from '../shared/components/about-us/about-us.component';
 import { ServicesComponent } from '../shared/components/services/services.component';
 import { TestimonialsComponent } from '../shared/components/testimonials/testimonials.component';
@@ -10,6 +11,7 @@ import { ContactUsComponent } from '../shared/components/contact-us/contact-us.c
   selector: 'app-home',
   standalone: true,
   imports: [
+    HeaderComponent,
     AboutUsComponent,
     ServicesComponent,
     TestimonialsComponent,

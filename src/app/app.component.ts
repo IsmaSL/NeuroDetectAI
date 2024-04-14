@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './shared/layouts/header/header.component';
 import { NavbarComponent } from './shared/layouts/navbar/navbar.component';
 import { FooterComponent } from './shared/layouts/footer/footer.component';
 
@@ -9,7 +8,6 @@ import { FooterComponent } from './shared/layouts/footer/footer.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    HeaderComponent,
     NavbarComponent,
     FooterComponent
   ],
