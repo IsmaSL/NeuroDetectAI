@@ -12,8 +12,8 @@ import { ContactUsComponent } from '../../shared/components/contact-us/contact-u
 })
 export class VteaComponent {
     // Header
-    title = "------";
-    description = "----- es una innovadora aplicación que utiliza técnicas de procesamiento del lenguaje natural para mejorar las habilidades del lenguaje en niños con TEA. A través de actividades interactivas, LinguaTEA ayuda a desarrollar la comunicación y el habla de manera efectiva y accesible."
+    title = "LinguaTEA";
+    description = "LinguaTEA es una innovadora aplicación que utiliza técnicas de procesamiento del lenguaje natural para mejorar las habilidades del lenguaje en niños con TEA. A través de actividades interactivas, LinguaTEA ayuda a desarrollar la comunicación y el habla de manera efectiva y accesible."
 
     // Features
     subtitle_1 = "Mejora tus habilidades lingüísticas con LinguaTEA";
@@ -42,10 +42,10 @@ export class VteaComponent {
     
     // Info
     info_title_1 = "Comunicación Eficaz";
-    info_description_1 = "LinguaTEA facilita una comunicación fluida entre el terapeuta y el niño, permitiendo un seguimiento y supervisión del progreso en tiempo real para garantizar la mejor experiencia terapéutica.";
+    info_description_1 = "LinguaTEA permite la mejora de la comunicación en niños con TEA a través de una interfaz amigable y actividades interactivas que tanto los niños como los terapeutas comprenderán con facilidad.";
     
     info_title_2 = "Recopilación de Feedback";
-    info_description_2 = "Recoge y analiza los comentarios de los niños y terapeutas para mejorar continuamente las actividades y escenarios del videojuego, asegurando una experiencia enriquecedora y efectiva para todos los usuarios."
+    info_description_2 = "Utiliza técnicas de procesamiento del lenguaje natural (PNL) para proporcionar retroalimentación constante sobre lo que repiten los niños. Los datos evaluados se enviarán a los terapeutas en tiempo real, permitiéndoles analizar y ajustar las actividades y escenarios del videojuego para asegurar una experiencia enriquecedora y efectiva para todos los usuarios."
     
     // Testimonials
     testimonial_title = "Lo que dicen nuestros usuarios";
@@ -55,7 +55,7 @@ export class VteaComponent {
     
     // Imágenes 
     imageTitle = "assets/images/projects/vtea/1.jpg";
-    imageSteps = "assets/images/projects/vtea/null.jpg";
-    imageInfo_1 = "assets/images/projects/vtea/null.jpg";
-    imageInfo_2 = "assets/images/projects/vtea/null.jpg";
+    imageSteps = "assets/images/projects/vtea/1.png";
+    imageInfo_1 = "assets/images/projects/vtea/2.png";
+    imageInfo_2 = "assets/images/projects/vtea/5.png";
 }
